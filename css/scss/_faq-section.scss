@@ -1,0 +1,70 @@
+.faq-section{
+    padding-top: 40px;
+    @media (min-width: 992px){
+        padding-top: 140px;
+    }
+    .accordion{
+        .accordion-item{
+            border: none;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            .accordion-header{
+                &:focus-visible{
+                    border: none;
+                }
+                .accordion-button:not(.collapsed){
+                    background-color: #898989;
+                    color: $text-color;
+                   
+                }
+                .accordion-button{
+                    &:focus{
+                        box-shadow: none;
+                        border-color: none;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+
+.faq-form{
+    margin-top: 80px;
+    .form-floating{
+        textarea{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        label{
+            left: 12px;
+            top: -3px;
+           }
+    }
+    .faq-section-form{
+        flex-direction: column;
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
+        .form-floating{
+            width: 100%;
+            @media (min-width: 768px){
+                width: 32%;
+            }
+            input{
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            }
+        }
+    }
+    .butt-button{
+        a{
+            display: inline-block;
+            padding: 12px 40px;
+            background-color: $headding-color;
+            color:$text-color;
+            text-decoration: none;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}

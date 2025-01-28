@@ -1,0 +1,46 @@
+.luxury-hotel-room-section{
+    margin-top: 50px;
+    @media only screen and (min-width: 992px){
+        margin-top: 140px;
+    }
+    .col-12{
+        h5{
+            @include headding-title (35px);
+        }
+    }
+    .luxury-hotel-room-card{
+        background-color: $bg-card-color;
+        border: none;
+        .room-images{
+            height: 340px;
+            img{
+                @include width-height;
+            }
+        }
+        .luxury-hotel-title{
+            a{
+               @include anchor (#000);
+              h5{
+                font-size: $font-medium;
+                margin-bottom: 15px;
+                font-weight: 400;
+              }
+            }
+            .hotel-luxury-capcen{
+                p{
+                    color: $card-bg;
+                    font-size: $font-small;
+                }
+            }
+            .luxury-title-button{
+                @include anchor (#000);
+                @include anchor-comancode (18px);
+                background-color: $card-bg;
+                border: none;
+                &:hover{
+                    @include hover ;
+                }
+            }
+        }
+    }
+}

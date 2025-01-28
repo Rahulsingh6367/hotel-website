@@ -1,0 +1,96 @@
+
+.hotel-luxury-footer-section{
+    background-color: #F3EFEF;
+    .container{
+        .row{
+            .luxury-hotel-button{
+                justify-content: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                   @include anchor($hover-color);
+                    i{
+                        font-size: 80px;
+                    }
+                }
+                .luxury-hotel-footer-title{
+                    h4{
+                        font-size: $font-bold;
+                        font-weight: 400;
+                        
+                    }
+                    strong{
+                        font-size: $font-regelur;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .footer-hr{
+            margin: 25px 0px;
+        }
+        .row{
+            .hottel-footer-logo{
+                flex-direction: column;
+                align-items: center;
+                .footer-title{
+                    width: 250px;
+                    margin-bottom: $margin-large;
+                    h5{
+                        font-size: $font-medium;
+                        text-align: center;
+                        @media only screen and (min-width: 768px){
+                            font-size: $font-bold;
+                        }
+                    }
+                    p{
+                        font-size: $font-regelur;
+                    }
+                }
+                .footer-menu{
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+                    text-align: center;
+                    @media only screen and (min-width: 667px){
+                        flex-direction: row;
+                    }
+                    a{
+                        font-size: $font-small;
+                       @include anchor($headding-color);
+                    }
+                }
+            }
+        }
+        .cofiright{
+            flex-direction: column;
+            gap: $margin-medium;
+            @media only screen and (min-width: 992px){
+                    flex-direction: row;
+            }
+            span{
+                font-size: $font-regelur-1;
+                
+            }
+            .footer-socal-icon{
+                a{
+                    background-color: #D9D9D9;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    @include anchor ($headding-color);
+                    &:hover{
+                        @include hover;
+                        color: #fff;
+                    }
+                }
+            }
+            p{
+                font-size: $font-regelur-1;
+                @include margin-padding-none ;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.home-section-navbar{
+    .nav-bar-section{
+        background-color: $br-color !important;
+    
+        .container{
+            .hotel-raj-vilash-logo{
+                color: $color-logo;
+                font-weight: 500;
+                font-size: $font-medium;
+            }
+            .navbar-toggler{
+                &:focus{
+                    color: $hover-color;
+                }
+                .navbar-toggler-icon{
+                    color: #E950D0;
+                    background-image: none;
+                    font-size: 35px;
+                    @include flexpro;
+                    @include width-height;
+                    padding: 4px;
+                }
+            }
+            .navbar-collapse{
+                    position: absolute;
+                    top: 70px;
+                    width: 100%;
+                    left: 0px;
+                    right: 0px;
+                    padding: 0px 15px;
+                    background-color: $button-color;
+                    z-index: 20;
+                @media only screen and (min-width: 992px){
+                    position: initial;
+                    background: none;
+                }
+               
+                .navbar-nav{
+                    .navbar-nav{
+                        .nav-item{
+                            &:hover > .dropdown-menu{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: all .3s linear;
+                                top: 60px;
+                            }
+                            &::before{
+                                content: "";
+                                border-bottom: 2px solid $hover-color;
+                                position: absolute;
+                                width: 62px;
+                                top: 40px;
+                                left: 8px;
+                                transform: scaleX(0);
+                                transform-origin: left;
+                            }
+                            &:hover{
+                                &::before{
+                                    transform: scaleX(1);
+                                    transition: all .3s linear;
+                                }
+                            }
+                            a{
+                                font-size: $font-regelur-1;
+                                color: $text-color;
+                                font-weight: 300;
+
+                                &:hover{
+                                   color: $hover-color;
+                                }
+                                &::after{
+                                    vertical-align: 0.2rem;
+                                }
+
+                            }
+                            .dropdown-menu{
+                                display: none;
+                                @media (min-width: 1200px) { 
+                                    display: block;
+                                        
+                                }
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all .3s linear;
+                                top: 40px;
+                                background-color: $hover-color;
+                                li{
+                                    margin-top: $margin-small;
+                                    &:last-child{
+                                        margin-bottom: $margin-small;
+                                    }
+                                    a{
+                                        &:hover{
+                                            color: $headding-color;
+                                        }
+                                    }
+                                }
+                            }
+                            .show{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

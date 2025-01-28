@@ -1,0 +1,60 @@
+// team
+
+
+.team-section{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    @media (min-width: 992px){
+        padding-top: 130px;
+    }
+    .team-member-card{
+        position: relative;
+        width: auto;
+        height: auto;
+
+        @media (min-width: 1200px){
+            width: 355px;
+            height: 300px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .team-capson-title{
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            padding: 10%;
+            opacity: 0;
+            h3{
+                margin: 0%;
+                color: $text-color;
+            }
+            span{
+                display: inline-block;
+                margin-top:6px;
+                color: $text-color;
+                font-size: $font-small;
+            }
+            p{
+                margin-top: $margin-bold;
+                color: $text-color;
+                margin-bottom: $margin-medium;
+            }
+            .socal-icon{
+                margin-top: 32px;
+                i{
+                    color: $text-color;
+                    font-size: $font-regelur-1;
+                }
+            }
+            
+        }
+        &:hover .team-capson-title{
+            opacity: 75%;
+            transition: 0.7s;
+            background-color:#FF2CAA ;
+            
+        }
+    }
+}

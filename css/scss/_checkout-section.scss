@@ -1,0 +1,154 @@
+.checkout-form-section{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @media (min-width: 992px){
+        padding-top: 140px;
+    }
+    .maine-title{
+        @include flexpro;
+        flex-direction: column;
+        h4{
+            @include headding-title(35px);
+            margin-bottom: 5px;
+        }
+        p{
+            margin-bottom: $margin-bold;
+        }
+    }
+    .billing-addres-title{
+        margin-top: $margin-bold;
+        h4{
+            font-size: $font-regelur-1;
+            margin-bottom: $margin-bold;
+            font-size: $font-medium;
+            font-weight: 400;
+        }
+    }
+    .check-out-form{
+        .check-form{
+            .first-name{
+                width: 49%;
+
+                label{
+                    font-size: $font-small;
+                }
+                input{
+                    padding: $padding-regular 10px;
+                    border: solid 1px #e5dede;
+                    &:focus{
+                        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                    }
+                }
+            }
+            .last-name{
+                width: 49%;
+
+                label{
+                    font-size: $font-small;
+                }
+                input{
+                    padding: $padding-regular 10px;
+                    border: solid 1px #e5dede;
+                    &:focus{
+                        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                    }
+                }
+            }
+        }
+
+        label{
+            font-size: $font-small;
+        }
+        input{
+            padding: $padding-regular 10px;
+            border: solid 1px #e5dede;
+            &:focus{
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            }
+        }
+
+        .message{
+            input{
+                padding-top: $padding-regular;
+                padding-bottom: 120px;
+                padding-left: $padding-small;
+                padding-right: $padding-small;
+                border: solid 1px #e5dede;
+                &:focus{
+                    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                }
+            }
+        }
+    }
+
+    .order-place-card{
+        background-color: $bg-card-color;
+        padding: 30px;
+        border-radius: 5px;
+
+        .order-title{
+            text-align: center;
+            h3{
+                @include headding-title(35px);
+                margin: 0%;
+            }
+        }
+        .order-rooms{
+            ul{
+                list-style: none;
+                @include margin-padding-none;
+                li{
+                    padding: 0%;
+                    font-size: $font-small;
+                }
+            }
+            .delux-order-room{
+                align-items: center;
+                .card-image-title{
+                    h3{
+                        font-size: $font-regelur-1;
+                    }
+                }
+            }
+            .promo-code {
+                align-items: center;
+                span{
+                    display: block;
+                    text-align: center;
+                    h3{
+                        font-size: $font-regelur-1;
+                    }
+                    p{
+                        margin: 0%;
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    margin: 0%;
+                }
+            }
+            .order-total-price{
+                b{
+                    font-size: $font-regelur-1;
+                }
+            }
+        }
+    }
+
+    .order-submit-button{
+        @include anchor-comancode(22px);
+        padding: $padding-small $padding-medium;
+        display: block;
+        background-color: black;
+        text-align: center;
+
+        &:hover{
+            @include hover;
+        }
+        a{
+           display: block;
+           @include anchor($text-color);
+           font-size: $font-regelur;
+        }
+    }
+}

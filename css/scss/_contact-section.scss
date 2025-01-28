@@ -1,0 +1,72 @@
+// contact
+
+
+.contact-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .contact-info{
+        margin-bottom: 50px;
+        text-align: center;
+        @media (min-width: 768px){
+          text-align: start;
+        }
+
+        &:last-child{
+            margin-bottom: 0px
+        }
+        a{
+            @include anchor(#000);
+            font-size: 25px;
+            margin-bottom: $margin-medium;
+        }
+        span{
+            font-size: 25px;
+            margin-bottom: $margin-medium;
+            display: inline-block;
+        }
+    }
+    .google-map{
+        iframe{
+            width: 100%;
+            height: 300px;
+            @media (min-width: 1200px){
+                width: 635px;
+                height: 670px;
+            }
+        }
+    }
+}
+
+.contact-form{
+    margin-bottom: 70px;
+
+    .form-floating{
+        label{
+            left: 10px;
+            top: -3px;
+        }
+        input{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+    }
+    .form-floating{
+        textarea{
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            &:focus{
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            }
+        }
+    }
+    .butt-button{
+        a{
+            display: inline-block;
+            padding: 12px 40px;
+            background-color: $headding-color;
+            color:$text-color;
+            text-decoration: none;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}

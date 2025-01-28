@@ -1,0 +1,145 @@
+@import '../css/scss/mixins';
+@import '../css/scss/variables';
+
+@import '../css/scss/navbar-generate';
+@import '../css/scss/home-section-genetate';
+@import '../css/scss/hotel-booking-section';
+@import '../css/scss/shoeing-luxury';
+@import '../css/scss/amenities-hotel-section';
+@import '../css/scss/hotel-banner-image';
+@import '../css/scss/customer-thought';
+@import '../css/scss/place-of-interest';
+@import '../css/scss/rajvilas-footer-section';
+@import '../css/scss/all-rooms-section';
+@import '../css/scss/rooms-details-page';
+@import'../css/scss/about-room-section';
+@import'../css/scss/about-explore-service';
+@import'../css/scss/cart-section';
+@import'../css/scss/my-account-form';
+@import'../css/scss/checkout-section';
+@import'../css/scss/rajvilas-brancge-section';
+@import'../css/scss/faq-section';
+@import'../css/scss/gallery-section';
+@import'../css/scss/blog-section';
+@import'../css/scss/service-section';
+@import'../css/scss/team-section';
+@import'../css/scss/contact-section';
+
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.hotel-booking-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .hotel-booking-form{
+        .form-floating {
+            input{
+                &:focus{
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                }
+            }
+        }
+        .form-city-section{
+            flex-direction: column;
+            @media (min-width: 768px){
+                flex-direction: row;
+            }
+            .form-floating{
+                width: 100%;
+                @media (min-width: 768px){
+                    width: 70%;
+                }
+            }
+        }
+        .pincode-button{
+            width: 100%;
+            @media (min-width: 768px){
+                width: 29.3%;
+            }
+            .form-floating{
+                width: 100%;
+            }
+        }
+    }
+    .details-form{
+        gap: 30px;
+        flex-direction: column;
+
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
+        .hotel-check-in-title{
+            padding: 10px;
+            justify-content: space-around;
+            border: solid 1px #cdcdcd;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+            input{
+                border: none;
+                background: none;
+                font-size: 13px;
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+        }
+    }
+    .forms-booking-form{
+        gap: 30px;
+         flex-direction: column;
+         flex-wrap: wrap;
+
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
+        .check-in-title-1 {
+            padding: 10px;
+            border: solid 1px #cdcdcd;
+            justify-content: space-around;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+            select{
+                border: none;
+                background: none;
+                font-size: 14px;
+                &:focus-visible{
+                    outline: none;
+                }
+                &:last-child{
+                    width: 130px;
+                }
+            }
+        }
+    }
+    .button-submit{
+        a{
+            @include anchor-comancode(22px);
+            @include anchor($text-color);
+            padding: $padding-small 35px;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

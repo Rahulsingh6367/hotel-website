@@ -1,0 +1,154 @@
+.return-card-section{
+    margin: 60px 0px;
+
+    .coupon-code{
+        margin-top: $padding-small;
+        input{
+            padding: 12px $padding-small;
+            padding-right: 0px;
+            border: solid 1px #b7b7bf;
+            width: 48%;
+
+            &:focus-visible{
+                outline: none
+            }
+            
+        }
+        a{
+            @include anchor-comancode(16px);
+            padding: 14px $padding-medium;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+   .cart-section-card{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+    @media only screen and (min-width: 576px){
+        flex-direction: row;
+        text-align: start;
+        align-items: start;  
+    }
+    .crosh-button{
+        @include flexpro;
+        i{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            &:focus-visible{
+                outline: none;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+            &:hover{
+                @include hover;
+                border-radius: 50%;
+                color: #fff;
+            }
+        }
+    }
+    .cart-images{
+        width: 90px;
+        height: 90px;
+        @include flexpro;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .card-image-title{
+        h3{
+            font-size:$font-small;
+            font-weight: 500;
+            margin-bottom: $margin-small;
+            @media only screen and (min-width: 992px){
+                font-size:$font-regelur-1;
+            }
+        }
+        .order-date-title{
+            .order-date{
+                span{
+                    display: inline-block;
+                    font-size:15px;
+                }
+                p{
+                    @include margin-padding-none;
+                    margin-bottom: 5px;
+                    font-size:15px;
+                }
+            }         
+            .order-detail{
+                span{
+                    display: inline-block
+                }
+                p{
+                    @include margin-padding-none;
+                }
+            }
+        }
+    }
+   }
+   .price-card{
+    p{
+        text-align: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+.card-cart-submit{
+    margin-top: 50px;
+    text-align: center;
+    padding: $padding-medium;
+    background-color: $bg-card-color;
+    h3{
+        text-align: center;
+        font-weight: 400;
+    }
+    .Subtotal{
+        align-items: center;
+        p{
+            margin: 0px;
+        }
+    }
+    .totle-price{
+        align-items: center;
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0%;
+        }
+        span{
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+    a{
+        @include anchor-comancode($font-regelur-1);
+        padding: $padding-small $padding-medium;
+        background-color: $headding-color;
+        &:hover{
+            @include hover;
+        }
+    }
+    .coupon-code {
+        justify-content: center;
+        input{
+            padding: 8px $padding-small;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+}
+}

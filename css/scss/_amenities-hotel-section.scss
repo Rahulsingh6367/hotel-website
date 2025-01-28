@@ -1,0 +1,42 @@
+.amenities-hotel-section{
+    .container{
+        .row{
+            .col-12{
+                h2{
+                    @include headding-title (30px);
+                    @media only screen and (min-width: 768px){
+                        @include headding-title(35px);
+                    }
+                }
+            }
+        }
+        .row{
+            .col-lg-6{
+                .amenities-hotel-icon{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .amenities-title{
+                    h3{
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .row{
+            .amenities-hotem-button{
+                a{
+                    @include anchor-comancode (16px);
+                    padding: $padding-small $padding-medium;
+                    &:hover{
+                        @include hover;
+                    }
+                }
+            }
+        }
+    }
+}

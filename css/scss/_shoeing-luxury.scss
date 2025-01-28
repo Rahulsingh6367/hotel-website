@@ -1,0 +1,68 @@
+.shoeing-luxury-hotel-section{
+    padding-top: 20px;
+    @media only screen and (min-width: 992px){
+        padding-top: 140px;
+    }
+    .container{
+        .row{
+            .col-12{
+                .luxury-hotel-mane-title{
+                    h2{
+                        @include headding-title(30px);
+                        @media only screen and (min-width: 768px){
+                            @include headding-title(35px);
+                        }
+                    }
+                }
+            }
+        }
+        .owl-carousel{
+        .shoeing-luxury-carousel{
+            .Luxury-room-card{
+                border: none;
+                border-radius: 0px;
+                background-color: $bg-card-color;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                .luxury-hotel-card-imgae{
+                    overflow: hidden;
+                    img{
+                        height: 260px;
+                        transform: scale(1);
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+                .Luxury-room-caption-button{
+                    bottom: initial;
+                    right: 0px;
+                    left: initial;
+                    background-color: $card-bg;
+                    top: 20px;
+                    padding: 8px $padding-medium;
+                }
+                .Luxury-room-title{
+                    .card-text{
+                        color: $card-bg;
+                        margin-bottom: $margin-small;
+                    }
+                    p{
+                        margin-bottom: $margin-small;
+                    }
+                    a{
+                        font-size: $font-medium;
+                        font-weight: 400;
+                        display: inline-block;
+                        text-decoration: none;
+                        color:$headding-color;
+                        display: block;
+                        margin: $margin-small 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

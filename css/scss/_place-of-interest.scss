@@ -1,0 +1,40 @@
+
+.place-of-interest-section{
+    .container{
+        .row{
+            .col-12{
+                .luxury-hotel-mane-title{
+                    h2{
+                        @include headding-title(30px);
+                        @media only screen and (min-width: 768px){
+                            @include headding-title(35px);
+                        }
+                    }
+                    p{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        .owl-carousel{
+            .palce-interest{
+                background-color: $bg-card-color;
+                .palce-interest-image{
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        transform: scale(1.2);
+                        transition: all .3s linear;
+                        &:hover{
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+                h4{
+                    font-weight: 300;
+                    font-size: $font-regelur;
+                }
+            }
+        }
+    }
+}

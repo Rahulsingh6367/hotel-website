@@ -1,0 +1,61 @@
+.account-form {
+    .account-title{
+        margin-top: 40px;
+        @media (min-width: 992px){
+            padding-top: 60px;
+        }
+        h4{
+            @include headding-title(35px);
+            font-weight: 400;
+        }
+    }
+    .account-form-email{
+        label{
+            font-size: $font-regelur-1;
+        }
+        span{
+            color: red;
+            display: inline-block;
+            font-size: $font-regelur-1;
+        }
+        input{
+            padding: 18px 8px;
+            font-size: $font-small;
+        }
+    }
+    .account-form-password{
+        label{
+            font-size: $font-regelur-1;
+        }
+        span{
+            color: red;
+            display: inline-block;
+            font-size: $font-regelur-1;
+        }
+        input{
+            padding: 18px 8px;
+            font-size: $font-small;
+        }
+    }
+    .login-account {
+        a{
+            @include anchor(#fff);
+            @include anchor-comancode(18px);
+            padding: $padding-small $padding-large;
+            &:hover{
+                @include hover;
+            }
+        }
+        .form-check{
+            input{
+                box-shadow: none;
+            }
+        }
+    }
+    .last-password {
+        a{
+            @include anchor(#1a08a1);
+            font-size: $font-small;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+
+.customer-thought-section{
+    .container{
+        .row{
+            .col-12{
+                .luxury-hotel-mane-title{
+                    h2{
+                        @include headding-title(30px);
+                        @media only screen and (min-width: 768px){
+                            @include headding-title(35px);
+                        }
+                    }
+                    p{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        .owl-carousel{
+            .customer-thought-cards{
+                .customer-thought-card{
+                    border: none;
+                    background-color: $bg-card-color;
+                    .card-body{
+
+                        p{
+                            font-weight: 300;
+                            margin-bottom: $margin-medium;
+                        }
+                        .customer-thought-title{
+                            img{
+                                border-radius: 50%;
+                                width: 90px;
+                                height: 90px;
+                            }
+                            .customer-name{
+                                ul{
+                                    list-style: none;
+                                    @include margin-padding-none;
+                                    li{
+                                        a{
+                                            text-decoration: none;
+                                            color: $headding-color;
+                                            display: inline-block;
+                                            color: #FFB800;
+                                        }
+                                    }
+                                }
+                                p{
+                                    @include margin-padding-none ;
+                                    color: $card-bg;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

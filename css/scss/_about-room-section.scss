@@ -1,0 +1,109 @@
+.about-rooms-section{
+    padding-top: 100px;
+
+    .about-section-card{
+        border: none;
+
+        .about-room-images{
+           
+            @media only screen and (min-width: 576px){
+                height: 400px;
+            }
+            .about-images{
+                width: 100%;
+                margin-bottom: 30px;
+
+                @media only screen and (min-width: 576px){
+                    @include about-comencode;
+                    margin-bottom: 0px;
+                }
+            }
+            .about-images-1{
+                position: initial;
+                top: 0%;
+                left: 25%;
+                right: inherit;
+                width: 100%;
+                img{
+                    height: 100%;
+                }
+
+               @media only screen and (min-width: 576px){
+                position: absolute;
+                @include about-comencode;
+                top: 20%;
+                left: 25%;
+            }
+            }
+        }
+        .about-room-title{
+            margin-top: 100px;
+            @media only screen and (min-width: 576px){
+                margin-top: 0px;
+            }
+
+            .room-details-info{
+                flex-wrap: wrap;
+                .room-info{
+                    max-width: 50%;
+                    i{
+                        color: $card-bg;
+                        font-size: $font-regelur-1;
+                    }
+                    span{
+                        p{
+                            font-size: 13px;
+                        }
+                        b{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-rooms-indor-outdor{
+        flex-flow: column-reverse;
+        @media only screen and (min-width: 1200px){
+            flex-flow: nowrap;
+        }
+        .about-room-images{   
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            @media only screen and (min-width: 576px){
+                flex-direction: row;
+                height: 400px;
+            }
+
+            .about-images-2{
+                display: flex;
+                justify-content: end;
+                margin-bottom: 30px;
+                @media only screen and (min-width: 576px){
+                    @include about-comencode;
+                    margin-bottom: 0px;
+                }
+            }
+            .about-images-3{
+                position: initial;
+                top: 0%;
+                left: 0%;
+                right: inherit;
+                width: 100%;
+                @media only screen and (min-width: 576px){
+                    @include about-comencode;
+                    position: absolute;
+                    top: 20%;
+                    left: 5%;
+                }
+                @media only screen and (min-width: 992px){
+                    left: 25%;
+                }
+                @media only screen and (min-width: 1200px){
+                    left: 10%;
+                }
+            }
+        }
+    }
+}

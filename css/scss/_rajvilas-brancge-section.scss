@@ -1,0 +1,54 @@
+.rajvilas-branche-hotel{
+    margin-top: 150px;
+    margin-bottom: 70px;
+    .hotel-branche-image{
+           @include width-height;
+           height: 350px;
+           @media (min-width: 768px){
+            height: 450px;
+        }
+        @media (min-width: 1200px){
+            flex-flow: nowrap;
+            width: 450px;
+            height: 380px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .rajvilas-hotel-main-title{
+        h4{
+            @include headding-title(35px);
+            margin-bottom: $padding-medium;
+        }
+        ul{
+            margin: $padding-medium 0px;
+            li{
+                margin-bottom: $padding-small;
+                font-size: 16px;
+            }
+        }
+        .hotel-contact {
+            flex-wrap: wrap;
+            span{
+                align-items: center;
+                margin-top: 15px;
+                i{
+                    font-size: $font-regelur-1;
+                    color: $card-bg;
+                }
+                p{
+                    margin: 0px;
+                    font-size: $font-small;
+                }
+            }
+        }
+    }
+    .hotel-dubai{
+        flex-flow: column-reverse;
+        @media (min-width: 1200px){
+            flex-flow: nowrap;
+        }
+    }
+}

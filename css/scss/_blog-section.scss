@@ -1,0 +1,188 @@
+// blog
+
+.blog-section{
+    .blog-main-title{
+        p{
+            text-align: justify;
+        }
+    }
+    .blogs-images{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            padding-top: $padding-small;
+            color:$card-bg ;
+        }
+    }
+    .blog-replay-form{
+
+        span{
+            display: block;
+            margin-bottom: $margin-medium;
+            color: $card-bg;
+        }
+        .website{
+            label{
+                margin-bottom: 8px;
+            }
+            input{
+                &:focus{
+                    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                }
+            }
+        }
+        .gmail{
+
+            input{
+                &:focus{
+                    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                }
+            }
+        }
+        .name{
+
+            input{
+                &:focus{
+                    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                }
+            }
+        }
+        .replat-form{
+            flex-wrap: wrap;
+            @media (min-width: 786px){
+                flex-wrap: nowrap;
+            }
+
+            .fast-name{
+                width: 100%;
+                @media (min-width: 786px){
+                    width: auto;
+                }
+            }
+            .gmail{
+                width: 100%;
+                @media (min-width: 786px){
+                    width: auto;
+                }
+            }
+            .website{
+                width: 100%;
+                @media (min-width: 786px){
+                    width: auto;
+                }
+            }
+        }
+    }
+    .message{
+
+        textarea{
+            &:focus{
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            }
+        }
+
+        .button-butt{
+            a{
+                @include anchor-comancode(20px);
+                @include anchor($text-color);
+                padding: $padding-small $padding-medium;
+                background-color: $headding-color;
+                margin-top: $margin-medium;
+
+                &:hover{
+                    @include hover;
+                }
+            }
+        }
+    }
+    .search-button{
+        position: relative;
+        input{
+            padding: 15px 10px;
+            padding-right: 50px;
+            &:focus{
+                box-shadow: none;
+                border: solid 1px $card-bg;
+            }
+        }
+        button{
+            position: absolute;
+            top: 0px;
+            left: inherit;
+            right: 0px;
+            border: none;
+            background: none;
+            a{
+                display: inline-block;
+                padding:  14px 15px;
+                font-size: $font-regelur-1;
+                color: $card-bg;
+
+                &:hover{
+                    color: $card-bg;
+                }
+               
+            }
+        }
+    }
+    .last-news{
+       a{
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 30px;
+        .news-card{
+            border: none;
+           .row{
+            
+            .news-latest{
+                img{
+                    width: 148px;
+
+                    @media (min-width: 576px){
+                        width: 136px;
+                    }
+                }
+    
+                .card-body{
+                    h3{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #000;
+                    }
+                    .cat-link{
+                        display: flex;
+                        gap: 5px;
+                        margin-top: 5px;
+                        span{
+                            color: $card-bg;
+                            font-size: 15px;
+                            &::after{
+                                content: '.';
+                                margin: 0px 4px;
+                            }
+                        }
+                        strong{
+                            color: $card-bg;
+                            font-weight: 400;
+                            font-size: 15px;
+                            &::after{
+                                content: '/';
+                                margin: 0px 4px;
+                            }
+                        }
+                    }
+                    p{
+                        margin: 0px;
+                        margin-top: 2px;
+                        color: $card-bg;
+                    }
+                }
+            }
+           }
+        }
+       }
+    }
+}

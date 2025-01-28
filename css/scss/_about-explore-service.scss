@@ -1,0 +1,126 @@
+
+
+.explore-service-section{
+    .explore-service-title{
+        h4{
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+    .explore-service-button{
+        a{
+            padding: $padding-small $padding-medium;
+            border-radius: 8px;
+            font-size: $font-regelur-1;
+            background-color: $button-color;
+            color: $text-color;
+            text-decoration: none;
+            display: inline-block;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+    .col-lg-6{
+        .amenities-hotel-icon{
+            img{
+                width: 60px;
+            }
+        }
+        .amenities-title {
+            p{
+                font-weight: 400;
+            }
+        }
+    }
+}
+.summer-Offer-section{
+    &::before{
+        content: "";
+        position: absolute;
+       @include  width-height ;
+        opacity: 50%;
+        background-color: $headding-color;
+    }
+    img{
+        max-width: 100%;
+        height: 300px;
+    }
+    .carousel-caption-summer-offer{
+        position: absolute;
+        right: initial;
+        left: 0%;
+        padding-left: 0%;
+        top: 0px;
+        color: #fff;
+        text-align: center;
+       @include width-height;
+        align-items: center;
+        display: flex;
+        @media only screen and (min-width: 768px){
+            padding-left: 8%;
+        }
+
+        .summer-offer-title{
+            width: 100%;
+            @media only screen and (min-width: 768px){
+                width: 50%;
+            }
+            h3{
+                font-size: $font-medium;
+                font-weight: 400;
+                @media only screen and (min-width: 768px){
+                    font-size: $font-bold;
+                }
+            }
+            span{
+                color: #F5B467;
+                font-size: $font-regelur-1;
+            }
+            strong{
+                font-size: $font-bold;
+                display: block;
+                text-align: center;
+                font-weight: 500;
+                margin-top: $margin-small;
+            }
+        }
+    }
+}
+
+.socal-gallery{
+    &::before{
+        content: "";
+        background-color: $headding-color;
+        opacity: 45%;
+       @include width-height;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    img{
+        height: 200px;
+        max-width: 100%;
+        @media only screen and (min-width: 768px){
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .carousel-caption-socal-gallery{
+        position: absolute;
+       @include width-height;
+        top: 0px;
+        @include flexpro;
+        a{
+            font-size: $font-medium;
+            color:$text-color;
+            letter-spacing: 6px;
+            text-decoration: none;
+
+            @media only screen and (min-width: 768px){
+                font-size: $font-bold;
+            }
+        }
+    }
+}

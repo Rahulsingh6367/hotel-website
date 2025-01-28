@@ -1,0 +1,243 @@
+
+.rooms-details-home-section{
+    background-color: $br-color;
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    .room-detaila-title{
+        h1{
+            @include margin-padding-none ;
+            color: $text-color;
+            font-size: $font-medium;
+
+            @media only screen and (min-width: 768px){
+                font-size: $font-bold;
+            }
+        }
+        span{
+            p{
+                @include margin-padding-none ;
+                color: $text-color;
+                font-weight: 400;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.room-details-section{
+    .room-detail-carousel{
+        &::before{
+            content: "";
+            background-color: $headding-color;
+            opacity: 60%;
+           @include width-height;
+            position: absolute;
+            z-index: 1;
+        }
+        .owl-nav{
+            position: absolute;
+            top: 0px;
+            left: 15px;
+            right: 15px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 45px;
+            z-index: 2;
+
+            .owl-prev, .owl-next{
+               @include owl-comanclass;
+            }
+            .owl-next{
+                @include owl-comanclass ;
+            }
+        }
+    }
+    .room-details-info{
+        flex-wrap: wrap;
+        .room-info{
+            max-width: 50%;
+            i{
+                font-size: $font-regelur-1;
+                color: $card-bg;
+            }
+            span{
+                p{
+                    font-size: 15px;
+                }
+                b{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .room-services{
+        h4{
+            font-weight: 400;
+            font-size: $font-medium;
+        }
+        .room-services-icon{
+            i{
+                padding: $padding-regular;
+                border-radius: 10px;
+                font-size: $font-regelur-1;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+        }
+    }
+
+    .room-details-chack-in{
+        display: flex;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .hotel-check-in-title-1{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding:$padding-regular;
+            width: 100%;
+            label{
+                font-size: $font-small;
+            }
+            input{
+                font-size: $font-small;
+                border: none;
+                background: none;
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+        }
+        .check-in-title-1{
+            label{
+                font-size: $font-small;
+            }
+            select{
+                font-size: $font-small;
+                border: none;
+                background: none;
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+        }
+        .hotel-check-button-1{
+            button{
+                padding:$padding-small $padding-medium;
+                background-color: $button-color;
+                color: $text-color;
+                border-radius: 4px;
+                font-size: $font-regelur-1;
+                border: none;
+                &:hover{
+                    @include hover;
+                }
+            }
+        }
+    }
+
+    .company-image{
+        height: 350px;
+        &::before{
+            content: "";
+            background-color:$headding-color;
+            opacity: 70%;
+            position: absolute;
+            @include width-height ;
+        }
+        img{
+            @include width-height ;
+        }
+        .carousel-caption-1{
+            position: absolute;
+           @include width-height ;
+            top: 0px;
+           @include flexpro ;
+           h4{
+            color: $text-color;
+           }
+        }
+    }
+}
+
+
+.main-room-section{
+    .Luxury-room-card{
+        border: none;
+        border-radius: 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        .luxury-hotel-card-imgae-1{
+            height: 320px;
+            &::before{
+                content: "";
+                background-color: $headding-color;
+                opacity: 70%;
+                @include width-height;
+                position: absolute;
+            }
+            img{
+                @include width-height;
+            }
+            .carousel-caption-2{
+                position: absolute;
+                @include width-height;
+                top: 0px;
+               @include flexpro ;
+
+               a{
+                @include anchor(#000);
+                h3{
+                    font-size: $font-regelur;
+                    color: $text-color;
+                    @include margin-padding-none ;
+                }
+               }
+            }
+        }
+    }
+}
+
+
+.main-room-section{
+    .Luxury-room-card{
+        border: none;
+        border-radius: 0px;
+        background-color: #FAF8F8;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        a{
+            @include anchor(#000);
+        }
+        .luxury-hotel-card-imgae-2 {
+            a{
+                @include anchor(#000);
+               
+                img{
+                    height: 320px;
+                }
+            }
+            .carousel-caption-3{
+                position: absolute;
+                right: 15%;
+                bottom: 6px;
+                left: 0px;
+                right: 0px;
+                padding: 1.25rem;
+                color: #fff;
+                text-align: center;
+                background: linear-gradient(0deg,hsla(0,0%,0%,.6) 0%,rgba(0,0,0,0) 100%);
+
+                a{
+                    @include anchor(#000);
+                }
+                .main-room-capcation{
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

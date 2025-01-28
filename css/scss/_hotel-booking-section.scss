@@ -1,0 +1,124 @@
+
+.hotel-check-in-section{
+    margin: $margin-large 0px;
+    position: initial;
+    z-index: 4;
+    right: 0px;
+    left: 0px;
+
+    @media (min-width: 992px){
+      margin-top: -98px;
+      position: absolute;
+    }
+    .container{
+        .row{
+            .hotel-check-section{
+                background-color: $bg-card-color;
+                .row{
+                    :first-child{
+                        margin-top: $margin-small;
+                    }
+                    .hotel-check-in-title{
+                        align-items: center;
+                        justify-content: center;
+                        @media (min-width: 576px){
+                            width: 50%;
+                            padding-top: $padding-medium;
+                        }
+                        @media (min-width: 992px){
+                            padding-top: $padding-medium;
+                            justify-content: center;
+                        }
+                        label{
+                            font-size: $font-regelur;
+                            margin-top: 0px;
+                            @media (min-width: 576px){
+                                font-size: 13px;
+                            }
+                            @media (min-width: 992px){
+                                font-size: $font-regelur;
+                            }
+                        }
+                        input{
+                            @include comancode;
+                            @media (min-width: 576px){
+                                font-size: 14px;
+                            }
+                            @media (min-width: 992px){
+                                @include comancode;
+                            }
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+                    }
+                    hr{
+                        margin: 0px;
+                    }
+                    .check-in-title-1{
+                        padding-bottom: $padding-medium;
+                        padding-left: 27px;
+                        padding-top: 0px;
+                        align-items: center;
+                        label{
+                            margin-top: 0px;
+                            font-size: $font-regelur;
+                            @media (min-width: 576px){
+                                font-size: 13px;
+                            }
+                            @media (min-width: 992px){
+                                font-size: $font-regelur;
+                            }
+                        }
+                        select{
+                            @include comancode;
+                            @media (min-width: 576px){
+                                font-size: 14px;
+                            }
+                            @media (min-width: 992px){
+                                @include comancode;
+                            }
+                            &:focus-visible{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .hotel-check-section{
+                .hotel-check-button{
+                    @include flexpro ;
+                    @include width-height;
+
+                    button{
+                            @include anchor-comancode(20px);
+                            padding: $padding-small $padding-large;
+                            border: none;
+                            margin-bottom: $margin-medium;
+                        @media only screen and (min-width: 576px){
+                            font-size: 14px;
+                            background-color: $button-color;
+                            color: $text-color;
+                            padding: 8px $padding-small;
+                            border: none;
+                            margin-bottom: 20px;
+                        }
+                        @media only screen and (min-width: 768px){
+                            margin-bottom: 0px;
+                        }
+                        @media only screen and (min-width: 992px){
+                            @include anchor-comancode(20px);
+                            padding: $padding-small 28px;
+                            border: none;
+                            font-size: $font-small;
+                        }
+                        &:hover{
+                            @include hover;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

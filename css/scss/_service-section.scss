@@ -1,0 +1,35 @@
+// services
+
+.srevice-section{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    @media (min-width: 992px){
+        padding-top: 140px;
+    }
+
+    .serive-main-title{
+        h4{
+            @include headding-title(37px);
+            font-weight: 400;
+        }
+    }
+    .service-section-image{
+        position: relative;
+        height: 320px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-caption-service{
+            position: absolute;
+            bottom: 0%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            color: $text-color;
+        }
+    }
+}

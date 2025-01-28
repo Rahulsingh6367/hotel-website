@@ -1,0 +1,60 @@
+@mixin flexpro {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hover{
+    background-color:$hover-color;
+    transition: all .3s linear;
+    border: none;
+}
+
+@mixin anchor-comancode($pare-1) {
+    display: inline-block;
+    text-decoration: none;
+    color:$text-color;
+    background-color: $button-color;
+    border-radius:$radius-small;
+    font-size: $pare-1;
+}
+
+@mixin anchor ($pare) {
+    text-decoration: none;
+    color: $pare;
+    display: inline-block;
+}
+
+@mixin comancode {
+    font-size: $font-small;
+    border: none;
+    background: none;
+
+}
+
+@mixin width-height {
+        width: 100%;
+        height: 100%
+        
+}
+@mixin margin-padding-none {
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin headding-title ($pare-1) {
+    color: $headding-color;
+    font-size: $pare-1;
+    margin-bottom: $margin-small;
+}
+@mixin owl-comanclass {
+    color: $text-color !important;
+    width: 55px;
+    height: 55px;
+    line-height: 55px !important;
+    border-radius: 50%;
+}
+@mixin about-comencode {
+    width: 415px;
+    height: 280px;
+}
